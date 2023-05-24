@@ -34,7 +34,16 @@ one are then compared to estimate savings.
 
 ## How to run it:
 
+### Jupyter notebooks:
+There are two jupyter notebooks that you can run as demo for this application:
+- **BC4_pipeline_training_github.ipynb**:  workflow to train a baseline model for electricity consumption data starting 
+from harmonised data.
+- **BC4_pipeline_prediction_github.ipynb**: workflow to make predictions using the locally stored model that
+was trained using the previous notebook. We assume that also the new data used to predict are harmonised.
+
 ### Install requirements:
+You must have Python installed on your system and a tool capable of running jupyter notebooks. For the official one
+you can follow the procedure here: https://docs.jupyter.org/en/latest/install.html
 This procedure was tested with **Python 3.8** even though it should work also with other versions.
 There are several dependencies to install before running the two notebooks.
 
