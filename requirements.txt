@@ -1,0 +1,3 @@
+pandas-bokeh==0.5.5
+pydotplus==2.0.2
+rdflib==6.2.0

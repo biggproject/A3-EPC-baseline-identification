@@ -1,0 +1,46 @@
+@prefix ns0: <https://bigg-project.eu/ontology#> .
+@prefix ns1: <https://energis.cloud#> .
+
+ns1:OneBuilding a ns0:Building ;
+    ns0:buildingIDFromOrganization "58" ;
+    ns0:buildingName "OneBuilding" ;
+    ns0:buildingUseType "Offices" ;
+    ns0:hasLocationInfo ns1:ASSET-58 ;
+    ns0:hasMeasurementLists ns1:METRIC-34766,
+     ns1:METRIC-34773,
+     ns1:METRIC-34778 .
+  
+ns1:ASSET-58 a ns0:LocationInfo ;
+    ns0:addressCity "Athens" ;
+    ns0:addressCountry "Greece" ;
+    ns0:addressPostalCode "12345" ;
+    ns0:addressProvince "Province" ;
+    ns0:addressStreetName "AvenueInAthens" ;
+    ns0:addressStreetNumber "123" .  
+
+ns1:METRIC-34766 a ns0:MeasurementList ;
+    ns0:aggregationFunction "SUM" ;
+    ns0:measuredProperty "EnergyConsumptionGridElectricity" ;
+    ns0:measurementFrequency "PT1H" ;
+    ns0:measurementKey "34766" ;
+    ns0:measurementListEnd "2015-01-01T05:00:00.000000000+00:00" ;
+    ns0:measurementListStart "2022-03-28T23:00:00.000000000+00:00" ;
+    ns0:measurementUnit "kWh" .
+
+ns1:METRIC-34773 a ns0:MeasurementList ;
+    ns0:aggregationFunction "SUM" ;
+    ns0:measuredProperty "GlobalHorizontalIrradiation" ;
+    ns0:measurementFrequency "PT1H" ;
+    ns0:measurementKey "34773" ;
+    ns0:measurementListEnd "2015-01-01T05:00:00.000000000+00:00" ;
+    ns0:measurementListStart "2022-03-28T23:00:00.000000000+00:00" ;
+    ns0:measurementUnit "Wh/m²" .
+
+ns1:METRIC-34778 a ns0:MeasurementList ;
+    ns0:aggregationFunction "AVG" ;
+    ns0:measuredProperty "OutdoorTemperature" ;
+    ns0:measurementFrequency "PT1H" ;
+    ns0:measurementKey "34778" ;
+    ns0:measurementListEnd "2015-01-01T05:00:00.000000000+00:00" ;
+    ns0:measurementListStart "2022-03-28T23:00:00.000000000+00:00" ;
+    ns0:measurementUnit "°C" .
